@@ -1,3 +1,14 @@
+# Terra-Game - Terraria clone
+
+Made in C++ to learn coding, system design, coding architecture
+
+Currently remarkable systems:
+ - Event System: [](include/event_system.h)
+ - Texture Atlas and builder: [](src/graphics/textureAtlasBuilder.cpp)
+  
+### NO AI USED
+
+***
 # Raylib-Quickstart
 A simple cross platform template for setting up a project with the bleeding edge raylib code.
 Works with C or C++.
