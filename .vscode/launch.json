@@ -1,0 +1,80 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/Debug/${workspaceFolderBasename}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": false
+        }
+      ],
+      "windows": {
+        "miDebuggerPath": "gdb.exe"
+      },
+      "osx": {
+        "program": "${workspaceFolder}/bin/Debug/${workspaceFolderBasename}",
+        "MIMode": "lldb"
+      },
+      "linux": {
+        "program": "${workspaceFolder}/bin/Debug/${workspaceFolderBasename}",
+        "miDebuggerPath": "/usr/bin/gdb"
+      },
+      "preLaunchTask": "build debug"
+    },
+    {
+      "name": "Run",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "program": "${workspaceFolder}/bin/Release/${workspaceFolderBasename}.exe",
+      "MIMode": "gdb",
+      "windows": {
+        "program": "${workspaceFolder}/bin/Release/${workspaceFolderBasename}.exe",
+        "miDebuggerPath": "gdb.exe"
+      },
+      "osx": {
+        "program": "${workspaceFolder}/bin/Release/${workspaceFolderBasename}",
+        "MIMode": "lldb"
+      },
+      "linux": {
+        "program": "${workspaceFolder}/bin/Release/${workspaceFolderBasename}",
+        "miDebuggerPath": "/usr/bin/gdb"
+      },
+      "preLaunchTask": "build release"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/pc/Documents/raylib/terra_game/src",
+      "program": "c:/Users/pc/Documents/raylib/terra_game/src/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

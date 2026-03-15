@@ -1,0 +1,22 @@
+the world is a fixed size consisting of tiles
+tiles can have blocks and walls
+tiles class only holds the most important info, so to hold as little space as possible
+additional info can be hooked onto a tile, if needed
+
+rendering tiles gather all the tiles in the area and create an image, that is then rendered
+each tile has a tileset, and according to the nearby tiles, the renderer will pick the tileset image it's supposed to render
+
+light is on a separate map, with 1 pixel representing 1 tile with a level of light between 0 and 15 (16 values)
+light is rendered once, and cached
+
+CURRENT
+
+player rendering, gravity, jumping, left right movement, aabb collision
+mining and placing tiles
+hotbar, picking up broken items, scrollwheel selection
+dirt layer on top, grass on surface, cave generation, tree generation
+inventory, inventory management
+health and damage system
+health display system
+
+add lerp to camera movement
