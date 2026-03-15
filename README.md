@@ -3,8 +3,8 @@
 Made in C++ to learn coding, system design, coding architecture
 
 Currently remarkable systems:
- - Event System: [](include/event_system.h)
- - Texture Atlas and builder: [](src/graphics/textureAtlasBuilder.cpp)
+ - [Event System](include/event_system.h)
+ - [Texture Atlas and builder](src/graphics/textureAtlasBuilder.cpp)
   
 ### NO AI USED
 
