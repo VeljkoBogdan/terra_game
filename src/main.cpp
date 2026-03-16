@@ -1,6 +1,9 @@
 #include "raylib.h"
 #include "resource_dir.h"
 
+#define RAYGUI_IMPLEMENTATION
+#include "raygui.h"
+
 #include "world.h"
 #include "graphics/textureAtlasBuilder.h"
 #include "graphics/tileRenderer.h"
@@ -20,7 +23,7 @@ int main () {
     // Startup
     Tiles::init();
     TextureAtlasBuilder texAtlasBuilder;
-    TextureAtlas texAtlas = texAtlasBuilder.buildAtlas("C:\\Users\\pc\\Documents\\raylib\\terra_game\\resources");
+    TextureAtlas texAtlas = texAtlasBuilder.buildAtlas("C:\\Users\\pc\\Documents\\raylib\\terra_game\\resources\\textures");
     TileRegistry::get().setAtlas(texAtlas);
 
     // WorldGen
