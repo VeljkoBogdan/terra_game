@@ -60,8 +60,10 @@ int main () {
                 tileRenderer.render(player.camera, debug);
                 player.render();
 
-                DrawRectangleLines(tileX * Constants::BLOCK_SIZE, tileY * Constants::BLOCK_SIZE, Constants::BLOCK_SIZE, Constants::BLOCK_SIZE, BLUE);
+                // DrawRectangleLines(tileX * Constants::BLOCK_SIZE, tileY * Constants::BLOCK_SIZE, Constants::BLOCK_SIZE, Constants::BLOCK_SIZE, BLUE);
             EndMode2D();
+
+            player.inventoryUI.render();
 
             // debug
             if (debug) {

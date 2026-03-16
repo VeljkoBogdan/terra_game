@@ -10,4 +10,7 @@ public:
 
     // PHYSICS
     static constexpr double GRAVITY = 0.981; // 9.81
+
+    // UI
+    static constexpr int SLOT_SIZE = 32;
 };

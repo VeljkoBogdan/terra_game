@@ -5,12 +5,13 @@
 #include <algorithm>
 #include "world.h"
 #include "util/TerraMath.cpp"
+#include "graphics/gui/PlayerInventoryUI.h"
+#include "core/inventory/PlayerInventory.h"
 
 #include <iostream>
 
 class Player {
 public:
-    Player();
     Player(World& world);
     void update(float dt);
     void render();
@@ -19,6 +20,9 @@ public:
     void tryPlace(Vector2 mousePos);
 
     Camera2D camera;
+
+    PlayerInventory inventory;
+    PlayerInventoryUI inventoryUI = PlayerInventoryUI(&inventory);
 private:
     Rectangle hitbox;
     Vector2 position;

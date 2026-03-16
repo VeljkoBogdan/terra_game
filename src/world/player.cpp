@@ -2,8 +2,6 @@
 
 #include "tileRegistry.h"
 
-Player::Player() {}
-
 Player::Player(World &world) {
     this->canJump = false;
     this->onGround = false;
